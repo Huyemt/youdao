@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JavaOcr">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../JavaOcr/JavaOcr.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
