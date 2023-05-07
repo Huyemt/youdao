@@ -8,6 +8,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="JavaOcr" level="project" />
-    <orderEntry type="library" name="Rifle-1.0.2" level="project" />
+    <orderEntry type="library" name="Rifle-1.0.5" level="project" />
   </component>
 </module>

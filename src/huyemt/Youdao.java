@@ -2,11 +2,9 @@ package huyemt;
 
 import huyemt.json.TransJson;
 import huyemt.json.TransValue;
-import javaocr.JavaOcr;
 import org.huyemt.crypto4j.Crypto4J;
 import org.huyemt.http4j.Http4J;
 import org.huyemt.http4j.HttpResponse;
-import org.huyemt.http4j.resource.Cookies;
 import org.huyemt.http4j.resource.Headers;
 import org.huyemt.http4j.resource.RequestBody;
 import org.huyemt.json4j.Json4J;
@@ -17,10 +15,8 @@ import org.rifle.module.Module;
 import org.rifle.scheduler.Task;
 import org.rifle.utils.TextFormat;
 
-import java.io.IOException;
 import java.util.Date;
 import java.util.LinkedList;
-import java.util.Objects;
 import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -101,7 +97,6 @@ class YoudaoCommand extends Command {
 
     private String translate(String value) {
         try {
-
             Matcher matcher = pattern.matcher(Http4J.get("https://shared.ydstatic.com/fanyi/newweb/v1.1.10/scripts/newweb/fanyi.min.js").html);
             if (matcher.find()) {
                 String key = matcher.group(1);
@@ -150,7 +145,7 @@ class YoudaoCommand extends Command {
                 return result.toString();
             } else
                 return "未找到Key";
-        } catch (IOException e) {
+        } catch (Exception e) {
             return TextFormat.FONT_RED + "~[~发生错误~]~";
         }
     }

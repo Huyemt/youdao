@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="Rifle-1.0.2">
+  <library name="Rifle-1.0.5">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../Rifle/target/Rifle-1.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../Rifle/target/Rifle-1.0.5.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
